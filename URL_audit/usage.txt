@@ -1,0 +1,12 @@
+uvicorn crypto_audit:app --reload
+
+
+http://127.0.0.1:8000/crypto-audit
+
+{
+    "urls": "https://github.com"
+}
+
+{
+    "urls": "https://facebook.com,https://google.com,https://github.com"
+}

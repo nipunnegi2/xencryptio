@@ -1,0 +1,111 @@
+{
+    "https://xencrypt.io": {
+        "tls": {
+            "version": "TLSv1.3",
+            "cipher_suite": {
+                "name": "TLS_AES_128_GCM_SHA256",
+                "protocol": "TLSv1.3",
+                "strength_bits": 128
+            }
+        },
+        "certificate": {
+            "subject": "CN=xencrypt.io",
+            "issuer": "CN=E6,O=Let's Encrypt,C=US",
+            "serial_number": "436414935856253583777979891240857465694099",
+            "version": "v3",
+            "not_before": "2025-08-08T09:26:07",
+            "not_after": "2025-11-06T09:26:06",
+            "signature_algorithm": "sha384",
+            "fingerprints": {
+                "md5": "059eebfef3924fd22d34b9d142af60cf",
+                "sha1": "a4e371830b22605c93428c578517764cb6235bbd",
+                "sha256": "231ca3c3a42088260e039697b5a4a681f05d304b62193253da2e4d8de132a954",
+                "sha384": "604ae1889079ff94d20a881a0b935307af2a05abffeede40f5abc66febf62712cb3137bb06f56dc1a7a24c8e9163a624",
+                "sha512": "517b774dbfa36cc8495dc1af6af978ac85346ab5dec82a96237d589c1e62f5ea42b736c5387187f6950f54da1738484754f5f47270760e27500a33fee08e1dff"
+            },
+            "public_key": {
+                "algorithm": "ECPublicKey",
+                "size_bits": 256,
+                "elliptic_curve": {
+                    "curve_name": "secp256r1",
+                    "key_size": 256
+                }
+            },
+            "extensions": {
+                "subject_alternative_names": [
+                    "*.xencrypt.io",
+                    "xencrypt.io"
+                ],
+                "key_usage": {
+                    "_digital_signature": true,
+                    "_content_commitment": false,
+                    "_key_encipherment": false,
+                    "_data_encipherment": false,
+                    "_key_agreement": false,
+                    "_key_cert_sign": false,
+                    "_crl_sign": false,
+                    "_encipher_only": false,
+                    "_decipher_only": false
+                },
+                "extended_key_usage": [
+                    "<ObjectIdentifier(oid=1.3.6.1.5.5.7.3.1, name=serverAuth)>",
+                    "<ObjectIdentifier(oid=1.3.6.1.5.5.7.3.2, name=clientAuth)>"
+                ],
+                "basic_constraints": {
+                    "_ca": false,
+                    "_path_length": null
+                },
+                "crl_distribution_points": [
+                    "http://e6.c.lencr.org/20.crl"
+                ],
+                "ocsp_urls": [],
+                "ca_issuers": [
+                    "http://e6.i.lencr.org/"
+                ],
+                "certificate_policies": [
+                    "<ObjectIdentifier(oid=2.23.140.1.2.1, name=Unknown OID)>"
+                ],
+                "ocsp_must_staple": false
+            },
+            "certificate_transparency": {
+                "ct_present": true,
+                "sct_count": 2
+            }
+        },
+        "certificate_chain": [],
+        "crypto_analysis": {
+            "cipher_components": [
+                "AES",
+                "SHA",
+                "SHA256"
+            ],
+            "ephemeral_key_exchange": false,
+            "cipher_suite_breakdown": {
+                "key_exchange": "Unknown",
+                "authentication": "ECDSA",
+                "encryption": "AES",
+                "hash": "SHA256"
+            },
+            "ocsp_stapling_active": null,
+            "certificate_chain_validated": true
+        },
+        "security_headers": {
+            "hsts": true,
+            "hsts_value": "max-age=31536000",
+            "hpkp": false,
+            "csp": false,
+            "x_frame_options": false
+        },
+        "dns_security": {
+            "caa_records": [],
+            "tlsa_records": []
+        },
+        "active_configuration": {
+            "tls_version": "TLSv1.3",
+            "cipher_strength_bits": 128,
+            "key_size_bits": 256,
+            "signature_algorithm": "sha384",
+            "encryption_standard": "AES"
+        }
+    }
+}
